@@ -1,0 +1,24 @@
+--MySQL--
+-Copy and paste team share SQL data into MySQL to give you same tables I currently use.
+-This will create a new database called 'ass' and all tables will show.
+
+--PHP files--
+-Include all other PHP files that are provided to any current doc file you use.
+-This will provide your topper and base for every page. 
+ Ensure you call for the relevant PHP pages on each page you use.
+
+--CSS SHEET--
+-The CSS style sheet is called HD. 
+-If you require to add to this that is ok but try not to amend or edit 
+ without discussing with the whole team.
+
+--WSPics--
+-This file contains useful images and is where any current pics are located.
+-If you want to use pictures then that is ok to add them in here.
+
+Please ask if anyone needs help with any of this.
+
+****LOG IN*****
+To log in to the website and have access use the following username and password:
+USERNAME: c@s
+PASSWORD: hayden2006
