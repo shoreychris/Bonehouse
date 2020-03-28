@@ -1,11 +1,10 @@
 <?php
 include "topper.php";
 ?>
-
 <link rel="stylesheet" href="HD3.css" type="text/css">
 <div class=content>
 <div class="main">
-
+<body>
 <h1>Dog Barbers & More</h1>
 <hr>
 
@@ -16,37 +15,37 @@ include "topper.php";
 <div class="row">
   <div class="column">
     <div class="content">	
-      <img src="WSPics/groom.jpg" alt="Booking" style="width:30%">
-      <h3>Bookings</h3>
-      <p>blah blah blah</p>
+      <img src="WSPics/groom.jpg" alt="Dog Grooming" style="width:100%">
+      <h3>Dog Grooming</h3>
+      <p>Salon & mobile grooming available. </p>
     </div>
   </div>
   <div class="column">
     <div class="content">
-    <img src="WSPics/calm.jpg" alt="Test" style="width:30%">
-      <h3>Test</h3>
-      <p>blah blah blah</p>
+    <img src="WSPics/calm.jpg" alt="Online Shop" style="width:100%">
+      <h3>Shop</h3>
+      <p>Visit our online pet shop for essential dog supplies.</p>
     </div>
   </div>
   <div class="column">
     <div class="content">
-   <img src="WSPics/dogcam.jpg" alt="Test" style="width:30%">
-      <h3>Test</h3>
-      <p>blah blah blah</p>
+   <img src="WSPics/dogcam.jpg" alt="Pet Photography" style="width:100%">
+      <h3>Photography</h3>
+      <p>Book a appointment with our photographer to capture your pooch looking their best. </p>
     </div>
   </div>
   <div class="column">
     <div class="content">
-    <img src="WSPics/pamper.jpg" alt="Test" style="width:30%">
-      <h3>Test</h3>
-      <p>blah blah blah</p>
+    <img src="WSPics/pamper.jpg" alt="Doggy Daycare" style="width:100%">
+      <h3>Doggy Daycare</h3>
+      <p>Book your dog into our daycare which includes a free wash, brush and nail clipping.</p>
     </div>
   </div>
 <!-- END GRID -->
 </div>
 
 <div class="content">
-  <img src="WSPics/calm.jpg" alt="Test" style="width:30%">
+  <img src="WSPics/calm.jpg" alt="Test" width=250 height=250 align=auto>
       <h3>Test</h3>
       <p>blah blah blah</p>
 </div>
@@ -57,8 +56,6 @@ include "topper.php";
 <?php
 include "media.php";
 ?>
-
-
 <?php
 include "base.php";
 ?>

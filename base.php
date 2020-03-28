@@ -25,7 +25,6 @@ Bedlington<br>
 Northumberland<br>
 NE22 5AA<br>
 <button onclick="openWin()">Directions</button>
-<button onclick="closeWin()">Close Directions</button>
 
 <script>
 var myWindow;
@@ -34,9 +33,6 @@ function openWin() {
   myWindow = window.open("location.php", "_blank", "width=600, height=500");
 }
 
-function closeWin() {
-  myWindow.close();
-}
 </script>
 
 
@@ -46,7 +42,7 @@ function closeWin() {
 <a class="btn btn-large btn-success" href="#"><i class="icon-truck"></i> Register today</a><br>
 <a href="#" class="fa fa-facebook"></a>
 <td align =center>
-<a href=admin.php><img src='WSPics/admin.png' width=50 height=50 align=auto><br> admin</a> <!--Admin button added to base for administration of the site-->
+<a href=admin.php><img src='WSPics/admin.png' width=50 height=50 align=auto></a> <!--Admin button added to base for administration of the site-->
 <br>
 <br>
 </td>

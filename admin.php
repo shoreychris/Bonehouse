@@ -46,10 +46,9 @@ if (!isset($_SESSION)) session_start();
       </button>
     <div class=dropdown-content>
 
-		<a href=memp.php>Manage Employee</a>
-		<a href=addemp.php>Add employee</a>
-		<a href=annleave.php>Annual Leave</a>
+		<a href=empindex.php>Employee Management</a>
 		<a href=index.php>Calendar</a>
+
 		
 	</div>
 	</div>	

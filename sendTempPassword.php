@@ -15,7 +15,7 @@ $sql = "Select * from CUSTOMER where Email = '" . $email . "'";
 		mysqli_query($mysqli,$sql);  
 		$msg = "Your password has been reset to " .  $num3;
 		// send email
-		mail($mail,"Password Reset for SWS",$msg);
+		mail($mail,"Password Reset for Barker & Bonehouse",$msg);
 	}
 		header("Location:login.php");
 ?> 	

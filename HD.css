@@ -41,10 +41,6 @@ div.content
 	font-size:22px;
 	font-family: Arial, Helvetica, sans-serif;
 	color:#3c3c42;
-	
-
-	
-
 }	
 div.admin
 {
@@ -55,13 +51,11 @@ div.admin
 	padding-left: 20px;
     color:#fff7ed;	
 	font-size:18px;
-	
-	
 }
 
 div.botto
 {	
-	height:auto;
+	height:300;
 	margin-left:auto;	
 	margin-right:auto;
 	padding-left: 10px; 
