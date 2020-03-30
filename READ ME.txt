@@ -8,9 +8,8 @@
  Ensure you call for the relevant PHP pages on each page you use.
 
 --CSS SHEET--
--The CSS style sheet is called HD. 
--If you require to add to this that is ok but try not to amend or edit 
- without discussing with the whole team.
+-There are numerous style sheets so be sure to make reference to the appropriate css sheet. 
+-If you require to add additional style sheets then this is ok but please do not amend any current style sheets.
 
 --WSPics--
 -This file contains useful images and is where any current pics are located.
@@ -20,5 +19,5 @@ Please ask if anyone needs help with any of this.
 
 ****LOG IN*****
 To log in to the website and have access use the following username and password:
-USERNAME: c@s
-PASSWORD: hayden2006
+USERNAME: admin@gmail.com
+PASSWORD: admin

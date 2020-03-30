@@ -34,7 +34,7 @@
 <?php 
 	if(isset($_GET['reset']))
 	{
-		echo "Enter email here<form method=post action=sendTempPassword.php><input type=text name =email><input type=submit value=reset></form>";
+		echo "Enter email here<form method=post action=change_password.php><input type=text name =email><input type=submit value=reset></form>";
 	}
 	else
 	{

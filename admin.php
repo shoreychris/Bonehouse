@@ -45,11 +45,7 @@ if (!isset($_SESSION)) session_start();
     <button class=dropbtn>Staff 
       </button>
     <div class=dropdown-content>
-
-		<a href=empindex.php>Employee Management</a>
-		<a href=index.php>Calendar</a>
-
-		
+		<a href=stafflogin.php>Employee Management</a>		
 	</div>
 	</div>	
 	

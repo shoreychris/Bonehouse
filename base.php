@@ -6,7 +6,7 @@
 <body>
 
 <div class=botto>
-<table width=100% height= 50% border=2>
+<table width=100% height= 80% border=5>
 <tr>
 <br><br>
 <td align=center>

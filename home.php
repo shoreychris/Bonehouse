@@ -22,7 +22,7 @@ include "topper.php";
   </div>
   <div class="column">
     <div class="content">
-    <img src="WSPics/calm.jpg" alt="Online Shop" style="width:100%">
+    <img src="WSPics/shop.jpg" alt="Online Shop" style="width:100%">
       <h3>Shop</h3>
       <p>Visit our online pet shop for essential dog supplies.</p>
     </div>
@@ -45,9 +45,10 @@ include "topper.php";
 </div>
 
 <div class="content">
-  <img src="WSPics/calm.jpg" alt="Test" width=250 height=250 align=auto>
-      <h3>Test</h3>
-      <p>blah blah blah</p>
+  <img src="WSPics/calm.jpg" alt="Keep Calm" width=250 height=250 align=left>
+      <h3>Keep Calm</h3>
+      <p>Please ensure to check our booking appointments to ensure your space.</p>
+	  <br><br><br><br><br>
 </div>
 <!-- END MAIN -->
 </div>
