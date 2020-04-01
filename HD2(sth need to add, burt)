@@ -1,0 +1,73 @@
+.outlined-link {
+	border: 1px #939E52 solid;
+	color: #3a3128;
+	display: inline-block;
+	-webkit-transition: all ease 0.5s;
+	-moz-transition: all ease 0.5s;
+	transition: all ease 0.5s;
+	position: relative;
+}
+.button, .outlined-link {
+	padding: 1em 1.5em .75em 1.5em;
+}
+.button, .outlined-link {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-family: "Proxima Nova","Montserrat","Noto Sans","Helvetica Neue",Arial,san-serif;
+	font-weight: bold;
+	border-radius: 2em;
+}
+.outlined-link {
+	border: 1px #939E52 solid;
+	color: #3a3128;
+	display: inline-block;
+	-webkit-transition: all ease 0.5s;
+	-moz-transition: all ease 0.5s;
+	transition: all ease 0.5s;
+	position: relative;
+}
+.span_1_of_3 {
+	width: 24.26%;
+}
+.page-portal {
+	text-align: center;
+	padding: 0 1em;
+	margin-bottom: 2em;
+}
+.group {
+	zoom: 1;
+}
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+.group:before, .group:after {
+	content: "";
+	display: table;
+}
+.group:after {
+	clear: both;
+}
+.group:before, .group:after {
+	content: "";
+	display: table;
+}
+
+::selection {
+	background: #000;
+	color: #fff;
+	text-shadow: 1px 1px 1px #000;
+}
+h4 {
+	display: block;
+	margin-block-start: 1.33em;
+	margin-block-end: 1.33em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	font-weight: bold;
+}
