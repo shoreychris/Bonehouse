@@ -39,7 +39,16 @@ $Location = $_SERVER['REQUEST_URI'];
 	</div>
 	
 			<a href=shop.php>Shop</a>
-			<a href=gallery.php>Gallery</a>
+			
+					<div class=dropdown>
+    <button class=dropbtn>Pet Care 
+      </button>
+    <div class=dropdown-content>
+		<a href=gallery1.php>Gallery1</a>
+		<a href=gallery2.php>Gallery2</a>
+		
+		</div>
+	</div>	
 
 			
 	<div class=dropdown>
@@ -89,26 +98,30 @@ $Location = $_SERVER['REQUEST_URI'];
   </div> 
   
 			<a href=shop.php>Shop</a>
-			<a href=gallery.php>Gallery</a>
 			
-			
-			
-			
-	<div class=dropdown>
+			<div class=dropdown>
     <button class=dropbtn>Pet Care 
       </button>
     <div class=dropdown-content>
+		<a href=gallery1.php>Gallery1</a>
+		<a href=gallery2.php>Gallery2</a>
+		
+		</div>
+	</div>	
+			
+			
+			
+<div class=dropdown>
+    <button class=dropbtn>Pet Care 
+      </button>
+    	<div class=dropdown-content>
 		<a href=welfare.php>Grooming & Diet Tips</a>
 		<a href=firstaid.php>Dog First Aid</a>
-		
-	  
 	</div>
-	</div>
-			
-			<a href=about.php>About Us</a>
-		
-			<a href=register.php style='margin-left: 300px'>Register</a>
-			<a href=login.php><back=$Location>Login</a>";	
+</div>	
+		<a href=about.php>About Us</a>
+		<a href=register.php style='margin-left: 300px'>Register</a>
+		<a href=login.php><back=$Location>Login</a>";	
 	
 					
 	}
