@@ -55,7 +55,7 @@ if(!isset($_SESSION['ROLE'])){
          <header id="header" class="header">
             <div class="top-left">
                <div class="navbar-header">
-                  <a class="navbar-brand" href="index.php"><img src="images/bab.jpg" alt="Logo" width=75 height=75></a>
+                  <a class="navbar-brand" href="index.php"><img src="WSPics/bab.jpg" alt="Logo" width=75 height=75></a>
 
                   <a id="menuToggle" class="menutoggle"><i class="fa fa-bars"></i></a>
                </div>
