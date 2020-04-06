@@ -4,8 +4,9 @@
                <div class="row">
                   <div class="col-sm-6">
                   <div class="col-sm-6 text-right">
-                     <a href="cal-index.php" class="btn btn-success pull-right">Calendar</a>
-                     <a href="admin.php" class="btn btn-success pull-right">Admin home page</a>
+                     <a href="cal-index.php" class="btn btn-success pull-left">Calendar</a>
+                           <br><br>
+                     <a href="admin.php" class="btn btn-success pull-left">Admin home page</a>
                   </div>
                </div>
             </div>
