@@ -1,14 +1,8 @@
 <?php
-//index.php
-
-
-
-
+//cal-index.php
 ?>
 <center><a href=admin.php>Click to return to Admin home page</a></center>
 <br>
-
-
 <button onclick="myFunction()">Print this page</button>
 
 <script>
@@ -19,7 +13,7 @@ function myFunction() {
 <!DOCTYPE html>
 <html>
  <head>
-  <title>Staff Planner</title>
+  <title>Leave Calendar</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -119,7 +113,7 @@ function myFunction() {
  </head>
  <body>
   <br />
-  <h2 align="center"><a href="#">Staff Planner</a></h2>
+  <h2 align="center"><a href="#">Leave Calendar</a></h2>
   <br />
   <div class="container">
    <div id="calendar"></div>
