@@ -1,7 +1,7 @@
 <?php
 //cal-index.php
 ?>
-<center><a href=admin.php>Click to return to Admin home page</a></center>
+<center><a href="admin.php" class="btn btn-success pull-left">Admin home page</a></center>
 <br>
 <button onclick="myFunction()">Print this page</button>
 
