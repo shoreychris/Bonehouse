@@ -25,6 +25,7 @@ if(!isset($_SESSION['ROLE'])){
    </head>
    <body>
       <aside id="left-panel" class="left-panel">
+	  <br><br><br>
          <nav class="navbar navbar-expand-sm navbar-default">
             <div id="main-menu" class="main-menu collapse navbar-collapse">
                <ul class="nav navbar-nav">
@@ -54,11 +55,9 @@ if(!isset($_SESSION['ROLE'])){
       <div id="right-panel" class="right-panel">
          <header id="header" class="header">
             <div class="top-left">
-               <div class="navbar-header">
-                  <a class="navbar-brand" href="index.php"><img src="WSPics/bab.jpg" alt="Logo" width=75 height=75></a>
-
+               <a class="navbar-brand" href="index.php"><img src="WSPics/bab.jpg" alt="Logo" width=75 height=75></a>
+                 
                   <a id="menuToggle" class="menutoggle"><i class="fa fa-bars"></i></a>
-               </div>
             </div>
             <div class="top-right">
                <div class="header-menu">
