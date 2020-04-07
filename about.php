@@ -3,7 +3,7 @@ include "topper.php";
 ?>
 <link rel="stylesheet" href="HD4.css" type="text/css">
 <div class="about-section">
-  <h1>About Us Page</h1>
+  <h1>About Us</h1>
   <p>Barker & Bonehouse is a friendly dog barbers which offers more.<br>
 		We offer salon and mobile grooming services,<br> online shop and pet photography.</p>
 </div>
