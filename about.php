@@ -66,4 +66,8 @@ include "topper.php";
 </div>
 </body>
 <?php
+include "media.php";
+?>
+<?php
 include "base.php";
+?>
