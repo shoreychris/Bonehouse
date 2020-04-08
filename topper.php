@@ -41,12 +41,12 @@ $Location = $_SERVER['REQUEST_URI'];
 			<a href=shop.php>Shop</a>
 			
 					<div class=dropdown>
-    <button class=dropbtn>Pet Care 
+    <button class=dropbtn>Photography 
       </button>
     <div class=dropdown-content>
-		<a href=gallery1.php>Gallery1</a>
-		<a href=gallery2.php>Gallery2</a>
-		
+		<a href=gallery1.php>Grooming</a>
+		<a href=gallery2.php>Daycare</a>
+		<a href=addpictures.php>Addpictures</a>
 		</div>
 	</div>	
 
@@ -100,11 +100,11 @@ $Location = $_SERVER['REQUEST_URI'];
 			<a href=shop.php>Shop</a>
 			
 			<div class=dropdown>
-    <button class=dropbtn>Pet Care 
+    <button class=dropbtn>Photography 
       </button>
     <div class=dropdown-content>
-		<a href=gallery1.php>Gallery1</a>
-		<a href=gallery2.php>Gallery2</a>
+		<a href=gallery1.php>Grooming</a>
+		<a href=gallery2.php>Day care</a>
 		
 		</div>
 	</div>	
