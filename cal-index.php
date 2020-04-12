@@ -3,6 +3,8 @@
 ?>
 <center><a href="admin.php" class="btn btn-success pull-left">Admin home page</a></center>
 <br>
+
+<div>
 <button onclick="myFunction()">Print this page</button>
 
 <script>
@@ -10,10 +12,12 @@ function myFunction() {
   window.print();
 }
 </script>
+</div>
 <!DOCTYPE html>
 <html>
  <head>
   <title>Leave Calendar</title>
+  <link rel="stylesheet" href="assets/css/popup.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -113,10 +117,22 @@ function myFunction() {
  </head>
  <body>
   <br />
+    <center><div class="popup" onclick="myFunction()">Help!
+  <span class="popuptext" id="myPopup">Click and drag over required days.</span></center>
+</div>
+<script>
+// When the user clicks on <div>, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+</script>
   <h2 align="center"><a href="#">Leave Calendar</a></h2>
   <br />
+
   <div class="container">
    <div id="calendar"></div>
   </div>
  </body>
 </html>
+
