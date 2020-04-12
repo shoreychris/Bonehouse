@@ -1,7 +1,7 @@
 <?php
 //cal-index.php
 ?>
-<center><a href="admin.php" class="btn btn-success pull-left">Admin home page</a></center>
+<center><a href="admin.php" class="btn btn-success">Admin home page</a></center>
 <br>
 
 <div>
@@ -17,6 +17,8 @@ function myFunction() {
 <html>
  <head>
   <title>Leave Calendar</title>
+  <br>
+  <center>Please note only 2 members of staff can be on leave at the same time !!!</center>
   <link rel="stylesheet" href="assets/css/popup.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.css" />
@@ -129,7 +131,6 @@ function myFunction() {
 </script>
   <h2 align="center"><a href="#">Leave Calendar</a></h2>
   <br />
-
   <div class="container">
    <div id="calendar"></div>
   </div>
