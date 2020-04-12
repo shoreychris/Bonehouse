@@ -17,6 +17,9 @@ $res=mysqli_query($con,"select * from department order by id desc");
                      <div class="card">
                         <div class="card-body">
                            <h4 class="box-title">Department Master </h4>
+						   <div class="popup" onclick="myFunction()">HELP!
+							<span class="popuptext" id="myPopup">Edit, delete or create new department.</span>
+						</div>
 						   <h4 class="box_title_link"><a href="add_department.php">Add Department</a> </h4>
                         </div>
                         <div class="card-body--">
@@ -53,7 +56,13 @@ $res=mysqli_query($con,"select * from department order by id desc");
                </div>
             </div>
 		  </div>
-         
+         <script>
+			// When the user clicks on <div>, open the popup
+			function myFunction() {
+			var popup = document.getElementById("myPopup");
+			popup.classList.toggle("show");
+			}
+		</script>
 <?php
 require('footer.inc.php');
 ?>
