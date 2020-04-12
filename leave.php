@@ -25,6 +25,9 @@ $res=mysqli_query($con,$sql);
                      <div class="card">
                         <div class="card-body">
                            <h4 class="box-title">Leave </h4>
+						   <div class="popup" onclick="myFunction()">HELP!
+								<span class="popuptext" id="myPopup">Click drop down on applied leave.</span>
+							</div>
 						    <?php if($_SESSION['ROLE']==2){ ?>
 						   <h4 class="box_title_link"><a href="add_leave.php">Add Leave</a> </h4>
 						   <?php } ?>
@@ -95,7 +98,12 @@ $res=mysqli_query($con,$sql);
                </div>
             </div>
 		  </div>
-         <script>
+		  <script>
+			// When the user clicks on div, open the popup
+			function myFunction() {
+			var popup = document.getElementById("myPopup");
+			popup.classList.toggle("show");
+			}
 		 function update_leave_status(id,select_value){
 			window.location.href='leave.php?id='+id+'&type=update&status='+select_value;
 		 }
