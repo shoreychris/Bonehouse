@@ -17,8 +17,12 @@ $res=mysqli_query($con,"select * from leave_type order by id desc");
                      <div class="card">
                         <div class="card-body">
                            <h4 class="box-title">Leave Type Master </h4>
+						   <div class="popup" onclick="myFunction()">HELP!
+							<span class="popuptext" id="myPopup">Add, edit or delete leave type.</span>
+						</div>
 						   <h4 class="box_title_link"><a href="add_leave_type.php">Add Leave Type</a> </h4>
                         </div>
+						
                         <div class="card-body--">
                            <div class="table-stats order-table ov-h">
                               <table class="table ">
@@ -52,7 +56,13 @@ $res=mysqli_query($con,"select * from leave_type order by id desc");
                </div>
             </div>
 		  </div>
-         
+         <script>
+			// When the user clicks on <div>, open the popup
+			function myFunction() {
+			var popup = document.getElementById("myPopup");
+			popup.classList.toggle("show");
+			}
+		</script>
 <?php
 require('footer.inc.php');
 ?>
