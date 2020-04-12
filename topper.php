@@ -33,7 +33,7 @@ $Location = $_SERVER['REQUEST_URI'];
 		<a href=grooming.php>Salon Grooming</a>
 		<a href=mobgrooming.php>Mobile Grooming</a>
 		<a href=pamper.php>Pamper Days</a>	
-		<a href=photography.php>Photography</a>
+		
 		
 	</div>
 	</div>
@@ -44,9 +44,9 @@ $Location = $_SERVER['REQUEST_URI'];
     <button class=dropbtn>Photography 
       </button>
     <div class=dropdown-content>
-		<a href=gallery1.php>Grooming</a>
-		<a href=gallery2.php>Daycare</a>
+		<a href=gallery.php>Gallery</a>
 		<a href=addpictures.php>Addpictures</a>
+		<a href=appointment.php>Appointment</a>
 		</div>
 	</div>	
 
@@ -93,7 +93,7 @@ $Location = $_SERVER['REQUEST_URI'];
 			<a href=grooming.php>Salon Grooming</a>
 			<a href=mobgrooming.php>Mobile Grooming</a>
 			<a href=pamper.php>Pamper Days</a>	
-			<a href=photography.php>Photography</a>
+			
 	     </div>
   </div> 
   
@@ -103,9 +103,9 @@ $Location = $_SERVER['REQUEST_URI'];
     <button class=dropbtn>Photography 
       </button>
     <div class=dropdown-content>
-		<a href=gallery1.php>Grooming</a>
-		<a href=gallery2.php>Day care</a>
-		
+		<a href=gallery.php>Gallery</a>
+		<a href=addpictures.php>Addpictures</a>
+		<a href=appointment.php>Appointment</a>
 		</div>
 	</div>	
 			
