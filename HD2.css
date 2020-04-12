@@ -35,7 +35,7 @@ div.links
 div.content
 {
 	width:1024px;
-	height:contain;
+	height:1500px;
 	margin-left:auto;	
 	margin-right:auto;
 	background-color:#fff7ed;
@@ -96,9 +96,7 @@ h7 {
 	font-style: bold;
 }
 
-p, div {
-    font-family: 'Nobile', Helvetica, Arial, sans-serif;
-}
+
 .round {
     border-radius: 50%;
 	}
@@ -171,6 +169,7 @@ body {
   display: block;
   text-align: left;
 }
+
 .dropdown-content a:hover {
   background-color: #ddd;
 }
@@ -228,7 +227,7 @@ div.desc {
 	position: relative;
 }
 .span_1_of_3 {
-	width: 24.26%;
+	width: 85.26%;
 }
 .page-portal {
 	text-align: center;
@@ -270,5 +269,25 @@ h4 {
 	margin-block-end: 1.33em;
 	margin-inline-start: 0px;
 	margin-inline-end: 0px;
+	font-weight: bold;
+}
+
+
+p {
+	margin: 0 0 1em 0;
+	padding: 0;
+}
+p {
+	display: block;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+}
+b, strong {
+	font-weight: bold;
+	color: #000;
+}
+strong {
 	font-weight: bold;
 }
