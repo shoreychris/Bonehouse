@@ -17,6 +17,9 @@ $res=mysqli_query($con,"select * from employee where role=2 order by id desc");
                      <div class="card">
                         <div class="card-body">
                            <h4 class="box-title">Employee Master </h4>
+						   <div class="popup" onclick="myFunction()">HELP!
+							<span class="popuptext" id="myPopup">Add, edit or delete employee.</span>
+						</div>
 						   <h4 class="box_title_link"><a href="add_employee.php">Add Employee</a> </h4>
                         </div>
                         <div class="card-body--">
@@ -56,7 +59,13 @@ $res=mysqli_query($con,"select * from employee where role=2 order by id desc");
                </div>
             </div>
 		  </div>
-         
+         <script>
+			// When the user clicks on <div>, open the popup
+			function myFunction() {
+			  var popup = document.getElementById("myPopup");
+			  popup.classList.toggle("show");
+			}
+		</script>
 <?php
 require('footer.inc.php');
 ?>
