@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="HandheldFriendly" content="true">
-<link rel="stylesheet" href="HD.css" type="text/css">
+<link rel="stylesheet" href="HD4.css" type="text/css">
 
 </head>
 <body>
@@ -27,44 +27,52 @@ $Location = $_SERVER['REQUEST_URI'];
 			
 					
   <div class=dropdown>
-    <button class=dropbtn>Services 
+    <button class=dropbtn>Grooming 
       </button>
     <div class=dropdown-content>
 		<a href=grooming.php>Salon Grooming</a>
-		<a href=mobgrooming.php>Mobile Grooming</a>
-		<a href=pamper.php>Pamper Days</a>	
-		
-		
+		<a href=mobgrooming.php>Mobile Grooming</a>		
 	</div>
 	</div>
-	
-			<a href=shop.php>Shop</a>
+	<div class=dropdown>
+		<button class=dropbtn>Daycare 
+		</button>
+			<div class=dropdown-content>
+				<a href=DogDaycare.php>Dog Daycare</a>	
+				<a href=DogDaycare.php>Dog Daycare</a>	
+			</div>
+	</div>
+	<div class=dropdown>
+		<button class=dropbtn>Photography 
+		</button>
+			<div class=dropdown-content>
+				<a href=photography.php>Photography</a>	
 			
-					<div class=dropdown>
-    <button class=dropbtn>Photography 
-      </button>
-    <div class=dropdown-content>
-		<a href=gallery.php>Gallery</a>
-		<a href=addpictures.php>Addpictures</a>
-		<a href=appointment.php>Appointment</a>
-		</div>
+			</div>
+	</div>
+				<a href=shop.php>Shop</a>
+			
+	<div class=dropdown>
+		<button class=dropbtn>Gallery 
+		</button>
+			<div class=dropdown-content>
+				<a href=gallery-burt.php>Gallery</a>
+		
+			</div>
 	</div>	
 
 			
 	<div class=dropdown>
-    <button class=dropbtn>Pet Care 
-      </button>
-    <div class=dropdown-content>
-		<a href=welfare.php>Grooming & Diet Tips</a>
-		<a href=firstaid.php>Dog First Aid</a>
-		
-	  
-	</div>
+		<button class=dropbtn>Pet Care 
+		</button>
+			<div class=dropdown-content>
+				<a href=welfare.php>Grooming & Diet Tips</a>
+				<a href=firstaid.php>Dog First Aid</a>	  
+			</div>
 	</div>
 			<a href=about.php>About Us</a>
-		
 			
-			<a href=logout.php style='margin-left: 250px'>Logout</a>
+			<a href=logout.php>Logout</a>
 			<a href=basket.php>Basket</a>
 			<a href=help.php><img src='WSPics/help.png' width=30 height=30 align=auto></a> <!--Help button added to base so that its available on each page-->
 			</div>";	
@@ -84,46 +92,54 @@ $Location = $_SERVER['REQUEST_URI'];
 			<a href=home.php style='margin-left: 50px'><img src='WSPics/k2.png' width=50 height=50 align=auto></a>
 			
 
-  <div class=dropdown>
+   <div class=dropdown>
     <button class=dropbtn>Grooming 
-      
-    </button>
-    <div class=dropdown-content>
-	
-			<a href=grooming.php>Salon Grooming</a>
-			<a href=mobgrooming.php>Mobile Grooming</a>
-			<a href=pamper.php>Pamper Days</a>	
-			
-	     </div>
-  </div> 
-  
-			<a href=shop.php>Shop</a>
-			
-			<div class=dropdown>
-    <button class=dropbtn>Photography 
       </button>
     <div class=dropdown-content>
-		<a href=gallery.php>Gallery</a>
-		<a href=addpictures.php>Addpictures</a>
-		<a href=appointment.php>Appointment</a>
-		</div>
-	</div>	
-			
-			
-			
-<div class=dropdown>
-    <button class=dropbtn>Pet Care 
-      </button>
-    	<div class=dropdown-content>
-		<a href=welfare.php>Grooming & Diet Tips</a>
-		<a href=firstaid.php>Dog First Aid</a>
+		<a href=grooming.php>Salon Grooming</a>
+		<a href=mobgrooming.php>Mobile Grooming</a>		
 	</div>
-</div>	
-		<a href=about.php>About Us</a>
-		<a href=register.php style='margin-left: 300px'>Register</a>
-		<a href=login.php><back=$Location>Login</a>";	
-	
-					
+	</div>
+	<div class=dropdown>
+		<button class=dropbtn>Daycare 
+		</button>
+			<div class=dropdown-content>
+				<a href=DogDaycare.php>Dog Daycare</a>	
+				<a href=DogDaycare.php>Dog Daycare</a>	
+			</div>
+	</div>
+	<div class=dropdown>
+		<button class=dropbtn>Photography 
+		</button>
+			<div class=dropdown-content>
+				<a href=photography.php>Photography</a>	
+			
+			</div>
+	</div>
+				<a href=shop.php>Shop</a>
+			
+	<div class=dropdown>
+		<button class=dropbtn>Gallery 
+		</button>
+			<div class=dropdown-content>
+				<a href=gallery-burt.php>Gallery</a>
+		
+			</div>
+	</div>	
+
+			
+	<div class=dropdown>
+		<button class=dropbtn>Pet Care 
+		</button>
+			<div class=dropdown-content>
+				<a href=welfare.php>Grooming & Diet Tips</a>
+				<a href=firstaid.php>Dog First Aid</a>	  
+			</div>
+	</div>			
+			<a href=about.php>About Us</a>		
+			<a href=register.php>Register</a>
+			<a href=login.php><back=$Location>Login</a>";	
+						
 	}
 
 ?>
