@@ -1,139 +1,65 @@
 <?php
-//cal-index.php
+require('db.inc.php');
+$msg="";
+if(isset($_POST['email']) && isset($_POST['password'])){
+	$email=mysqli_real_escape_string($con,$_POST['email']);
+	$password=mysqli_real_escape_string($con,$_POST['password']);
+	$res=mysqli_query($con,"select * from employee where email='$email' and password='$password'");
+	$count=mysqli_num_rows($res);
+	if($count>0){
+		$row=mysqli_fetch_assoc($res);
+		$_SESSION['ROLE']=$row['role'];
+		$_SESSION['USER_ID']=$row['id'];
+		$_SESSION['USER_NAME']=$row['name'];
+		header('location:index.php');
+		die();
+	}else{
+		$msg="Please enter correct login details";
+	}
+}
 ?>
-<center><a href="admin.php" class="btn btn-success">Admin home page</a></center>
-<br>
-
-<div>
-<button onclick="myFunction()">Print this page</button>
-
-<script>
-function myFunction() {
-  window.print();
-}
-</script>
-</div>
-<!DOCTYPE html>
-<html>
- <head>
-  <title>Leave Calendar</title>
-  <br>
-  <center>Please note only 2 members of staff can be on leave at the same time !!!</center>
-  <link rel="stylesheet" href="assets/css/popup.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.js"></script>
-  <script>
-   
-  $(document).ready(function() {
-   var calendar = $('#calendar').fullCalendar({
-    editable:true,
-    header:{
-     left:'prev,next today',
-     center:'title',
-     right:'month,agendaWeek,agendaDay'
-    },
-    events: 'load.php',
-    selectable:true,
-    selectHelper:true,
-    select: function(start, end, allDay)
-    {
-     var title = prompt("Enter Event Title");
-     if(title)
-     {
-      var start = $.fullCalendar.formatDate(start, "Y-MM-DD HH:mm:ss");
-      var end = $.fullCalendar.formatDate(end, "Y-MM-DD HH:mm:ss");
-      $.ajax({
-       url:"insert.php",
-       type:"POST",
-       data:{title:title, start:start, end:end},
-       success:function()
-       {
-        calendar.fullCalendar('refetchEvents');
-        alert("Added Successfully");
-       }
-      })
-     }
-    },
-    editable:true,
-    eventResize:function(event)
-    {
-     var start = $.fullCalendar.formatDate(event.start, "Y-MM-DD HH:mm:ss");
-     var end = $.fullCalendar.formatDate(event.end, "Y-MM-DD HH:mm:ss");
-     var title = event.title;
-     var id = event.id;
-     $.ajax({
-      url:"update.php",
-      type:"POST",
-      data:{title:title, start:start, end:end, id:id},
-      success:function(){
-       calendar.fullCalendar('refetchEvents');
-       alert('Event Update');
-      }
-     })
-    },
-
-    eventDrop:function(event)
-    {
-     var start = $.fullCalendar.formatDate(event.start, "Y-MM-DD HH:mm:ss");
-     var end = $.fullCalendar.formatDate(event.end, "Y-MM-DD HH:mm:ss");
-     var title = event.title;
-     var id = event.id;
-     $.ajax({
-      url:"update.php",
-      type:"POST",
-      data:{title:title, start:start, end:end, id:id},
-      success:function()
-      {
-       calendar.fullCalendar('refetchEvents');
-       alert("Event Updated");
-      }
-     });
-    },
-
-    eventClick:function(event)
-    {
-     if(confirm("Are you sure you want to remove it?"))
-     {
-      var id = event.id;
-      $.ajax({
-       url:"delete.php",
-       type:"POST",
-       data:{id:id},
-       success:function()
-       {
-        calendar.fullCalendar('refetchEvents');
-        alert("Event Removed");
-       }
-      })
-     }
-    },
-
-   });
-  });
-   
-  </script>
- </head>
- <body>
-  <br />
-    <center><div class="popup" onclick="myFunction()">Help!
-  <span class="popuptext" id="myPopup">Click and drag over required days.</span></center>
-</div>
-<script>
-// When the user clicks on <div>, open the popup
-function myFunction() {
-  var popup = document.getElementById("myPopup");
-  popup.classList.toggle("show");
-}
-</script>
-  <h2 align="center"><a href="#">Leave Calendar</a></h2>
-  <br />
-  <div class="container">
-   <div id="calendar"></div>
-  </div>
- </body>
+<!doctype html>
+<html class="no-js" lang="">
+   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Login Page</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="assets/css/normalize.css">
+      <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+      <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+      <link rel="stylesheet" href="assets/css/themify-icons.css">
+      <link rel="stylesheet" href="assets/css/pe-icon-7-filled.css">
+      <link rel="stylesheet" href="assets/css/flag-icon.min.css">
+      <link rel="stylesheet" href="assets/css/cs-skin-elastic.css">
+      <link rel="stylesheet" href="assets/css/style.css">
+      <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+   </head>
+   <body class="bg-dark">
+      <div class="sufee-login d-flex align-content-center flex-wrap">
+         <div class="container">
+            <div class="login-content">
+               <div class="login-form mt-150">
+                  <form method="post">
+                     <div class="form-group">
+                        <label>Email address</label>
+                        <input type="email" name="email" class="form-control" placeholder="Email" required>
+                     </div>
+                     <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" name="password" class="form-control" placeholder="Password" required>
+                     </div>
+                     <button type="submit" class="btn btn-success btn-flat m-b-30 m-t-30">Sign in</button>
+					 <div class="result_msg"><?php echo $msg?></div>
+					</form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script src="assets/js/vendor/jquery-2.1.4.min.js" type="text/javascript"></script>
+      <script src="assets/js/popper.min.js" type="text/javascript"></script>
+      <script src="assets/js/plugins.js" type="text/javascript"></script>
+      <script src="assets/js/main.js" type="text/javascript"></script>
+   </body>
 </html>
-
