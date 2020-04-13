@@ -52,7 +52,12 @@ include "topper.php";
 </div>
 <!-- END MAIN -->
 </div>
+<?php
 
+echo "						
+	<a href=manage.php style='margin-left: 50px'><img src='WSPics/Mail.png' width=50 height=50 align=auto></a>
+	<td align=center>Click to subscribe to mailing list </td>";
+?>
 </body>
 <?php
 include "media.php";
