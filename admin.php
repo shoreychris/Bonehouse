@@ -1,4 +1,5 @@
 
+
 <html>
 
 <br>
@@ -45,7 +46,8 @@ if (!isset($_SESSION)) session_start();
     <button class=dropbtn>Staff 
       </button>
     <div class=dropdown-content>
-		<a href=stafflogin.php>Employee Management</a>		
+		<a href=stafflogin.php>Employee Management</a>	
+		<a href=cal-stafflogin.php>Leave calendar</a>	
 	</div>
 	</div>	
 	
@@ -54,7 +56,8 @@ if (!isset($_SESSION)) session_start();
     <button class=dropbtn>Customer 
       </button>
     <div class=dropdown-content>
-		<a href=mcustomers.php>Customer/Staff</a>
+		<a href=mcustomers.php>Customer</a>
+		<a href=sendmail.php>Mailing list</a>
 	</div>
 	</div>
 		
@@ -92,3 +95,4 @@ if (!isset($_SESSION)) session_start();
 </div>
 </body>
 </html>
+
