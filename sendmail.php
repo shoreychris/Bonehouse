@@ -8,10 +8,17 @@ include 'admintopper.php';
 <center><h2>Mailing</h2></center>
 <center>
 <a href=admin.php>click to return to Admin home page</a>
+<button onclick="myFunction()">Help!</button>
+<script>
+function myFunction() 
+{
+    alert("Email all customers who have subscribed for newsletters and promotions.");
+}
+</script
 <?php
  include 'include.php';
  if (!$_POST) {
-      //haven't seen the form, so display it
+      // display form
       $display_block = <<<END_OF_BLOCK
       <form method="POST" action="$_SERVER[PHP_SELF]">
       <p><label for="subject">Subject:</label><br/>
