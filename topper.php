@@ -30,8 +30,8 @@ $Location = $_SERVER['REQUEST_URI'];
     <button class=dropbtn>Grooming 
       </button>
     <div class=dropdown-content>
-		<a href=grooming.php>Salon Grooming</a>
-		<a href=mobgrooming.php>Mobile Grooming</a>		
+		<a href=appointAnna.php>Salon Grooming</a>
+		<a href=appointmentAnna.php>Mobile Grooming</a>		
 	</div>
 	</div>
 	<div class=dropdown>
@@ -72,10 +72,11 @@ $Location = $_SERVER['REQUEST_URI'];
 	</div>
 			<a href=about.php>About Us</a>
 			
-			<a href=logout.php>Logout</a>
+			
 			<a href=basket.php>Basket</a>
 			<a href=help.php><img src='WSPics/help.png' width=30 height=30 align=auto></a> <!--Help button added to base so that its available on each page-->
-			</div>";	
+			<a href=logout.php><img src='WSPics/exit.png' width=30 height=30 align=right></a>
+		</div>";	
 			
 		
 				
@@ -146,4 +147,5 @@ $Location = $_SERVER['REQUEST_URI'];
 	
 	</center>
 </div>
+
 
