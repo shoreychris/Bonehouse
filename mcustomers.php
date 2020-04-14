@@ -14,7 +14,7 @@ function myFunction()
 }
 </script
 <center>
-<a href=admin.php>click to return to Admin home page</a>
+<a href="admin.php" class="btn btn-success pull-left">Admin home page</a>
 </center>
 <?php
 include "dbconnect.php";
