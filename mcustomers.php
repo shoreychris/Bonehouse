@@ -6,11 +6,19 @@ include "admintopper.php";
 
 &nbsp
 <h2>Manage Customers/Admin</h2>
+<button onclick="myFunction()">Help!</button>
+<script>
+function myFunction() 
+{
+    alert("Make any necessary amendments to customer details. \nClick update when finished. \nUser type 2 is given admin access.");
+}
+</script
 <center>
-
+<a href=admin.php>click to return to Admin home page</a>
+</center>
 <?php
 include "dbconnect.php";
-echo "<a href=admin.php>click to return to Admin home page</a>";
+echo 
 $CustomerID =	"";
 $Surname  =	"";
 $FirstName ="";
@@ -117,7 +125,7 @@ else
 		$sql.= "UserType ='" . $UserType ."' where CustomerID =" . $CustomerID;
 	}
 	mysqli_query($mysqli,$sql);
-echo "<a href=admin.php>click to return to Admin home page</a>";
+
 }
 
 
@@ -128,4 +136,6 @@ echo "<a href=admin.php>click to return to Admin home page</a>";
 <br><br><br><br>
 
 </div>
+
+
 
