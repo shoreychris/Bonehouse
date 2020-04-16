@@ -24,16 +24,7 @@ $Location = $_SERVER['REQUEST_URI'];
 			<center>
 			<div class=navbar>			
 			<a href=home.php style='margin-left: 50px'><img src='WSPics/k2.png' width=50 height=50 align=auto></a>
-			
-					
-  <div class=dropdown>
-    <button class=dropbtn>Grooming 
-      </button>
-    <div class=dropdown-content>
-		<a href=appointAnna.php>Salon Grooming</a>
-		<a href=appointmentAnna.php>Mobile Grooming</a>		
-	</div>
-	</div>
+		<a href=3b-reserve-slot.php>Grooming</a>	
 	<div class=dropdown>
 		<button class=dropbtn>Daycare 
 		</button>
@@ -46,22 +37,17 @@ $Location = $_SERVER['REQUEST_URI'];
 		<button class=dropbtn>Photography 
 		</button>
 			<div class=dropdown-content>
-				<a href=photography.php>Photography</a>	
-			
+				<a href=appointment.php>Photography</a>	
 			</div>
 	</div>
-				<a href=shop.php>Shop</a>
-			
+<a href=homeShop.php>Shop</a>		
 	<div class=dropdown>
 		<button class=dropbtn>Gallery 
 		</button>
 			<div class=dropdown-content>
-				<a href=gallery-burt.php>Gallery</a>
-		
+				<a href=gallery-burt.php>Gallery</a>		
 			</div>
-	</div>	
-
-			
+	</div>				
 	<div class=dropdown>
 		<button class=dropbtn>Pet Care 
 		</button>
@@ -70,16 +56,11 @@ $Location = $_SERVER['REQUEST_URI'];
 				<a href=firstaid.php>Dog First Aid</a>	  
 			</div>
 	</div>
-			<a href=about.php>About Us</a>
-			
-			
+			<a href=about.php>About Us</a>	
 			<a href=basket.php>Basket</a>
 			<a href=help.php><img src='WSPics/help.png' width=30 height=30 align=auto></a> <!--Help button added to base so that its available on each page-->
 			<a href=logout.php><img src='WSPics/exit.png' width=30 height=30 align=right></a>
-		</div>";	
-			
-		
-				
+		</div>";					
 	}
 	else
 	{
@@ -91,16 +72,7 @@ $Location = $_SERVER['REQUEST_URI'];
 			<center>
 			<div class=navbar>
 			<a href=home.php style='margin-left: 50px'><img src='WSPics/k2.png' width=50 height=50 align=auto></a>
-			
-
-   <div class=dropdown>
-    <button class=dropbtn>Grooming 
-      </button>
-    <div class=dropdown-content>
-		<a href=grooming.php>Salon Grooming</a>
-		<a href=mobgrooming.php>Mobile Grooming</a>		
-	</div>
-	</div>
+			<a href=3b-reserve-slot.php>Grooming</a>	
 	<div class=dropdown>
 		<button class=dropbtn>Daycare 
 		</button>
@@ -113,22 +85,17 @@ $Location = $_SERVER['REQUEST_URI'];
 		<button class=dropbtn>Photography 
 		</button>
 			<div class=dropdown-content>
-				<a href=photography.php>Photography</a>	
-			
+				<a href=appointment.php>Photography</a>				
 			</div>
 	</div>
-				<a href=shop.php>Shop</a>
-			
+				<a href=homeShop.php>Shop</a>			
 	<div class=dropdown>
 		<button class=dropbtn>Gallery 
 		</button>
 			<div class=dropdown-content>
-				<a href=gallery-burt.php>Gallery</a>
-		
+				<a href=gallery-burt.php>Gallery</a>		
 			</div>
-	</div>	
-
-			
+	</div>				
 	<div class=dropdown>
 		<button class=dropbtn>Pet Care 
 		</button>
@@ -147,5 +114,4 @@ $Location = $_SERVER['REQUEST_URI'];
 	
 	</center>
 </div>
-
 
