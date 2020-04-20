@@ -45,7 +45,8 @@ $Location = $_SERVER['REQUEST_URI'];
 		<button class=dropbtn>Gallery 
 		</button>
 			<div class=dropdown-content>
-				<a href=gallery-burt.php>Gallery</a>		
+				<a href=gallery-burt.php>Gallery</a>
+				<a href=addGallery.php>Add pictures</a>
 			</div>
 	</div>				
 	<div class=dropdown>
