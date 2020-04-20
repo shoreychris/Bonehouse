@@ -1,0 +1,67 @@
+.navbar 
+{
+	width: 1177px;
+	height: auto;
+	overflow: auto;
+	background-color: #21aaa7;
+} 
+.navbar a 
+{
+	float:left;
+	font-size: 22px;
+    color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+.navbar a:hover
+{
+	background-color: blue;
+}
+.home
+{
+	text-align: center;
+    height: 50px;
+	width: 100px;
+}
+.basket
+{
+	text-align: center;
+    height: 50px;
+	width: 400px;
+}
+@media screen and (max-width: 1177px)
+{
+    .basket
+	{
+        width: 100%;
+    }
+    .navBar 
+	{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 640px) 
+{
+    .basket
+	{
+        width: 100%;
+    }
+    .navBar 
+	{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 320px) 
+{
+    .basket
+	{
+        width: 320px;
+    }
+    .navBar 
+	{
+        width: 320px;
+    }
+}

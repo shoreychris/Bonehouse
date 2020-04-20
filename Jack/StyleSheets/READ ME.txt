@@ -1,0 +1,10 @@
+For Shop
+
+Admin login 
+Username: admin
+password: admin
+
+Customer Login (Joe Bloggs)
+username: banter 
+password: password
+-------------------------------------------
