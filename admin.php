@@ -1,5 +1,4 @@
 
-
 <html>
 
 <br>
@@ -31,17 +30,13 @@ if (!isset($_SESSION)) session_start();
 			<div class=navbar>			
 			<a href=home.php style='margin-left: 50px'><img src='WSPics/k2.png' width=50 height=50 align=auto></a>
 	<div class=dropdown>
-    <button class=dropbtn>Retail 
+    <button class=dropbtn>Shop 
       </button>
-    <div class=dropdown-content>
-		
-		<a href=mproducts.php>Manage Products</a>
-		<a href=morders.php>Manage Orders</a>
-		<a href=addproducts.php>Add Products</a>
-		
+    <div class=dropdown-content>		
+		<a href=homeShop.php>Manage Products</a>
+		<a href=morders.php>Manage Orders</a>		
 	</div>
-	</div>
-		
+	</div>		
 	<div class=dropdown>
     <button class=dropbtn>Staff 
       </button>
@@ -49,42 +44,33 @@ if (!isset($_SESSION)) session_start();
 		<a href=stafflogin.php>Employee Management</a>	
 		<a href=cal-stafflogin.php>Leave calendar</a>	
 	</div>
-	</div>	
-	
-	
+	</div>		
 	<div class=dropdown>
     <button class=dropbtn>Customer 
       </button>
     <div class=dropdown-content>
 		<a href=mcustomers.php>Customer</a>
-		<a href=sendmail.php>Mailing list</a>
-	</div>
-	</div>
+		<a href=blog_index.php>Blog & Adverts</a>
 		
+		
+	</div>
+	</div>	
 	<div class=dropdown>
     <button class=dropbtn>Bookings 
       </button>
     <div class=dropdown-content>
-		<a href=groomingbookings.php>Grooming</a>
+		<a href=waitingListAnna.php>Grooming</a>
 		<a href=photographybookings.php>Photography</a>
-		<a href=pamperbookings.php>Pamper Days</a>
-	
+		<a href=bookingincome.php>Dog Daycare</a>
 	</div>
 	</div>	
-
-
-
 	<div class=dropdown>
     <button class=dropbtn>Site Management 
       </button>
     <div class=dropdown-content>
-		<a href=addtogallery.php>Gallery</a>
-		
-	
+		<a href=addGallery.php>Gallery</a>
 	</div>
-	</div>	
-
-	
+	</div>		
 		<br><br><br><br><br><br><br><br>
 		</div>";		
 		
@@ -95,4 +81,3 @@ if (!isset($_SESSION)) session_start();
 </div>
 </body>
 </html>
-

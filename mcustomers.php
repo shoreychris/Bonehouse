@@ -17,7 +17,11 @@ function myFunction()
 <a href="admin.php" class="btn btn-success pull-left">Admin home page</a>
 </center>
 <?php
-include "dbconnect.php";
+$connect = new PDO("mysql:host=localhost;dbname=unn_v031587", "unn_v031587", "Hayden2006");
+$query = "SELECT * FROM customer ORDER BY CustomerID";
+$statement = $connect->prepare($query);
+$statement->execute();
+$result = $statement->fetchAll();
 echo 
 $CustomerID =	"";
 $Surname  =	"";
@@ -136,6 +140,4 @@ else
 <br><br><br><br>
 
 </div>
-
-
 

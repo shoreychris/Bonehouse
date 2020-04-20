@@ -12,7 +12,7 @@ include "topper.php";
 <div class="row">
   <div class="column">
     <div class="card">
-      <img src="WSPics/nic.jpg" alt="Nicola" style="width:100%">
+      <img src="WSPics/nic.JPG" alt="Nicola" style="width:100%">
       <div class="container">
         <h2>Nicola Swift-Hunter</h2>
         <p class="title">Manager</p>
@@ -26,7 +26,7 @@ include "topper.php";
 
   <div class="column">
     <div class="card">
-      <img src="WSPics/sharon.jpg" alt="Sharon" style="width:100%">
+      <img src="WSPics/Sharon.jpg" alt="Sharon" style="width:100%">
       <div class="container">
         <h2>Sharon Ross</h2>
         <p class="title">Dog Groomer</p>

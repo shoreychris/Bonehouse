@@ -4,8 +4,8 @@
       global $mysqli;
 
       //connect to server and select database
-      $mysqli = mysqli_connect("localhost", "root",
-          "", "ass");
+      $mysqli = mysqli_connect("localhost", "unn_v031587",
+          "Hayden2006", "unn_v031587");
 
       //if connection fails, stop script execution
       if (mysqli_connect_errno()) {

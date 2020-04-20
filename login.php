@@ -1,50 +1,73 @@
 <?php include "topper.php";?>
 <html>
-<head>
-<link rel="stylesheet" href="SWS.css" type="text/css">
-</head>
-<body>
+	<head>
+		<title>Login</title>
+		<link rel="stylesheet" href="HD.css" type="text/css">
+		<style>
+			input[type=submit] 
+			{
+				background-color: #21aaa7;
+				border: none;
+				color: white;
+				padding: 15px 32px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				hover: blue;
+				font-size: 15px;
+			}
+			input[type=submit]:hover
+			{
+				background-color: blue;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<script>
+			function loginForm()
+			{
+				var isComplete = true;
+				
+				var un = document.forms["userName"]["txtUserName"].value;
+				var pw = document.forms["password"]["txtPassword"].value;	
 
-
-<div class=content>
-&nbsp
-<center>
-<table border=1 width250px>
-<form name=liForm action=login_process.php  method=POST>
-<tr>
-<td>User Name:</td>
-<td><input type=text name=uName id=uName></td>
-</tr>
-<tr>
-<td>Password:</td>
-<td><input type=password name=pWord id=pWord></td>
-</tr>
-<tr>
-<td colspan=2 align=center>
-<input type=submit value='Submit'>
-</td>
-</tr>
-</form>
-</table>
-</center>
-&nbsp
-&nbsp
-&nbsp
-&nbsp
-<?php 
-	if(isset($_GET['reset']))
-	{
-		echo "Enter email here<form method=post action=change_password.php><input type=text name =email><input type=submit value=reset></form>";
-	}
-	else
-	{
-		echo "<a href=login.php?reset=true>Reset Password</a>";
-	}
-?>
-&nbsp
-&nbsp
-&nbsp
-</div>
-</body>
+				if(un = "" || pw != "")
+				{
+					isComplete = false;
+					alert("Please complete all fields");
+					return isComplete;
+				}
+				return isComplete;
+			}
+		</script>
+		<br>
+		<div class=content>
+			<br>
+			<center>
+				<h2 style="color:#21aaa7">Login</h2>
+				<p>
+				<table border="1" bordercolor="#21aaa7" width = 60%>
+					<form name =customerLogin action=login_process.php  onsubmit="return loginForm()"  method=POST>
+						<tr>
+							<td>User Name:</td>
+							<td><input type=text name=txtUserName id=txtUserName></td>
+						</tr>
+						<tr>
+							<td>Password:</td>
+							<td><input type=password name=txtPassword id=txtPassword></td>
+						</tr>
+						<tr>
+							<td colspan=2 align=center>
+							<input type=submit value="Submit">
+							</td>
+						</tr>
+					</form>		
+				</table>
+			</center>			
+			<?php 
+				include "base.php";
+			?>			
+		</div>
+	</body>
 </html>
-<?php include "base.php";?>

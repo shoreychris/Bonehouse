@@ -5,11 +5,11 @@ include "topper.php";
 <div class=content>
 <link rel="stylesheet" href="HD.css" type="text/css">
 <br>
-<center> DOG CPR <br> <img src="WSPics/fa.jpg" width=600 height=600 align=auto></center>
+<center> DOG CPR <br> <img src="WSPics/fa.JPG" width=600 height=600 align=auto></center>
 
 <br>
 
-<center> HEAT STROKE IN DOGS <br> <img src="WSPics/hs.jpg" width=600 height=600 align=auto></center>
+<center> HEAT STROKE IN DOGS <br> <img src="WSPics/hs.JPG" width=600 height=600 align=auto></center>
 
 <div class="container">
 

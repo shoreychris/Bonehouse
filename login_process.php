@@ -1,69 +1,62 @@
 <?php 
-       include "dbconnect.php"; 
-	session_start();
-	$user=$_POST['uName'];
-	$pass=$_POST['pWord'];
+	include "Database/dbConnect.php";
+	include "loginShop.php";
 	
-	$sql = "SELECT * FROM CUSTOMER WHERE UserName='$user' and Password='$pass'";
-       $fetch=mysqli_query($mysqli,$sql);    	
-
-	$userCount = mysqli_num_rows($fetch);		
-	$row = mysqli_fetch_array($fetch);	
-		if ($userCount>0) 
-		{		
-			if($row['UserType']==2)
-			{
-				$_SESSION['admin_user']="admin";
-			}
-			
-			$_SESSION['login_username']=$row['UserName'];  
-			$check=$_SESSION['login_username'];
-			header("Location:home.php");
-		}
-		else
+	$db = dbConnect::getConnection();
+	
+	$un = $_POST["txtUserName"];
+	$pw = $_POST["txtPassword"];
+	
+	//admin
+	$sqlSearchAdmin = $db->prepare
+	("SELECT * FROM customer WHERE UserType = 2 AND UserName = :username AND Password = :password");
+    $sqlSearchAdmin->execute(array
+		(
+			'username' => $un,
+			'password' => $pw
+		)
+	);  
+	//customer
+	$sqlSearchCustomer = $db->prepare
+	("SELECT * FROM customer WHERE UserName = :username AND Password = :password");
+    $sqlSearchCustomer->execute(array
+		(
+			'username' => $un,
+			'password' => $pw
+		)
+	);   
+	
+	$rowCount = $sqlSearchCustomer->rowCount();
+	$adminCount = $sqlSearchAdmin->rowCount();
+	if($rowCount > 0)
+	{
+		if($adminCount > 0)
 		{
-			header("Location:home.php");
-		}
-?>
-
-<?php
-include "dbconnect.php";
-session_start();
-
-$un = $_POST['un'];
-$pw = $_POST['pw'];
-$thisPW = mysqli_real_escape_string($mysqli,$_POST['pw']);
-echo $pw;
-echo $thisPW;
-
-echo "<p>";
-//the salt
-$theSalt = "%6^123£";
-
-//the salted password
-$spw = $theSalt . $pw;
-
-
-//hash the salted password
-$hspw = md5($spw);
-	$sql = "SELECT * FROM CUSTOMER WHERE UserName='$user' and Password='$pass'";
-       $fetch=mysqli_query($mysqli,$sql);    	
-
-	$userCount = mysqli_num_rows($fetch);		
-	$row = mysqli_fetch_array($fetch);	
-		if ($userCount>0) 
-		{		
-			if($row['UserType']==2)
+			//if admin or user is already logged in, end the login session
+			if(isset ($_SESSION['login_username']) OR ($_SESSION['admin_user']))
 			{
-				$_SESSION['admin_user']="admin";
+				session_destroy();
 			}
-			
-			$_SESSION['login_username']=$row['UserName'];  
-			$check=$_SESSION['login_username'];
-			header("Location:home.php");
+			session_start();
+			$_SESSION['login_username'] = $un;
+			$_SESSION['admin_user'] = "admin";
+			header("location: home.php");
 		}
-		else
+		else 
 		{
-			header("Location:home.php");
+			//if admin or user is already logged in, end the login session
+			if(isset ($_SESSION['login_username']) OR ($_SESSION['admin_user']))
+			{
+				session_destroy();
+			}
+			session_start();
+			$_SESSION['login_username'] = $un;
+			header("location: home.php");
 		}
+	}
+	else 
+	{
+		header("location: login.php");
+		echo "User Name not Recognised.  Please Register";
+	}
 ?>
